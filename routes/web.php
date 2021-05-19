@@ -97,6 +97,8 @@ route::post('/brandprocess/{id}', [CategoryController::class,'updatebrand']);
 
 route::get('/Aviewcust',[CategoryController::class,'viewcust']);
 
+route::get('/Myorders',[ShoppingController::class,'vieworder']);
+
 Route::get('/sessiondelete',function(){
     if(session()->has('sname'))
     {

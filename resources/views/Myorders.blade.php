@@ -1,4 +1,4 @@
-@extends('theme2')
+@extends('theme3')
 
 
 @section('content')
@@ -24,7 +24,7 @@
             {{ csrf_field() }}
             <tr>
                 <!-- <td>{{ $i->id }}</td> -->
-                <td>{{ $i->order->iname }}</td>
+                <td>{{ $i->order->name }}</td>
                 <td>{{ $i->oqty }}</td>
                 <td>{{ $i->odate }}</td>
                 <td>{{ $i->oprice }}</td>

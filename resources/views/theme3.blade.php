@@ -86,6 +86,7 @@
                                             
                                         </a>
                                         <a class="dropdown-item" href="checkout.html">product checkout</a>
+                                        <a class="dropdown-item" href="/Myorders">My Orders</a>
                                         <a class="dropdown-item" href="cart.html">shopping cart</a>
                                         <a class="dropdown-item" href="confirmation.html">confirmation</a>
                                         <a class="dropdown-item" href="elements.html">elements</a>

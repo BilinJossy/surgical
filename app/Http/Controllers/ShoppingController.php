@@ -123,8 +123,8 @@ class ShoppingController extends Controller
                 $order->cid=$userId;
                 $order->proid=$cart->pid;
                 $order->oqty=$cart->qty;
-                $order->oprice=$product->cost;
-                $order->ototal=($cart->qty)*($product->cost);
+                $order->oprice=$product->sell;
+                $order->ototal=($cart->qty)*($product->sell);
                 $order->odate=$cdate;
                 $order->save(); 
                 
@@ -151,6 +151,14 @@ class ShoppingController extends Controller
     return view('payment',['total'=>$total]);
     
 }
+
+function vieworder(Request $req)
+{
+    $userid=$req->session()->get('sname') ['id'];
+    $c=OrderModel::where('cid','=',$userid)-> with('customer','order')->get();
+    return view('/Myorders',compact('c'));
+}
+
 
     /**
      * Show the form for creating a new resource.
