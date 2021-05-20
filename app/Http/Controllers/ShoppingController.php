@@ -10,6 +10,7 @@ use App\Models\CartModel;
 use App\Models\customer;
 use App\Models\login;
 use App\Models\OrderModel;
+use App\Models\FeedbackModel;
 use Illuminate\support\Facades\DB;
 use session;
 use Carbon\Carbon;
@@ -158,6 +159,26 @@ function vieworder(Request $req)
     $c=OrderModel::where('cid','=',$userid)-> with('customer','order')->get();
     return view('/Myorders',compact('c'));
 }
+
+public function Cfeedback($id)
+    {
+        $item=OrderModel::find($id);
+        return view('feedback',compact('item'));
+    }
+
+public function SCfeedback($id , Request $request)
+    {
+        $getcom=request('comment');
+
+        $f=new FeedbackModel();
+
+        $f->cname=session('sname')->name;
+        $f->orid=$id;
+        $f->comment=$getcom;
+
+        $f->save();
+        return redirect('/Myorders');
+    }
 
 
     /**

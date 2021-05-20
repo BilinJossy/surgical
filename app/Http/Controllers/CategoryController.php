@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\CategoryModel;
 use App\Models\BrandModel;
 use App\Models\ProductModel;
+use App\Models\FeedbackModel;
 use App\Models\customer;
 
 
@@ -165,6 +166,13 @@ class CategoryController extends Controller
         $item=customer::all();
 
         return view('Aviewcust',compact('item'));
+    }
+
+    public function viewfeed()
+    {
+        $item=FeedbackModel::all();
+
+        return view('Aviewfeedback',compact('item'));
     }
 
     /**

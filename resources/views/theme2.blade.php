@@ -110,6 +110,7 @@
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown_1">
                                         <a class="dropdown-item" href="/Aviewcust">View Customers</a>
                                         <a class="dropdown-item" href="/Aviewcat">View Orders</a>
+                                        <a class="dropdown-item" href="/Aviewfeedback">View Reviews</a>
                                         
                                     </div>
                                 </li>

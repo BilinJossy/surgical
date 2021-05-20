@@ -99,6 +99,12 @@ route::get('/Aviewcust',[CategoryController::class,'viewcust']);
 
 route::get('/Myorders',[ShoppingController::class,'vieworder']);
 
+route::get('/feedback/{id}',[ShoppingController::class,'Cfeedback']);
+
+route::post('/feedback1/{id}',[ShoppingController::class,'SCfeedback']);
+
+route::get('/Aviewfeedback',[CategoryController::class,'viewfeed']);
+
 Route::get('/sessiondelete',function(){
     if(session()->has('sname'))
     {

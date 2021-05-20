@@ -17,7 +17,7 @@
                 <th>PRICE</th>
                 <th>TOTAL</th>
                 
-                <th>FEEDBACK </th>
+                <th>REVIEWS </th>
                 {{-- <th>DELETE </th> --}}
             </tr>
             @foreach($c as $i)
@@ -30,7 +30,7 @@
                 <td>{{ $i->oprice }}</td>
                 <td>{{ $i->ototal }}</td>
   
-                <td><a class="btn-3" href={{"/editcat/".$i->id}}>FEEDBACK</a></td>
+                <td><a class="btn-3" href={{"/feedback/".$i->id}}>Share Reviews</a></td>
                 {{-- <td><a class="btn btn-danger"  href={{"/deletecat/".$i->id}}>DELETE</a></td> --}}
             
             </tr>
