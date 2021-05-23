@@ -116,7 +116,7 @@
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link" href="index.html">Logout</a>
+                                    <a class="nav-link" href="/sessiondelete">Logout</a>
                                 </li>
                                 <!--<li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown_3"

@@ -23,6 +23,16 @@ Route::get('/login', function () {
     return view('login');
 });
 
+Route::post('/login1', [customercontroller::class,'check']);
+
+Route::get('/register', function () {
+    return view('register');
+});
+
+Route::post('/register1',[customercontroller::class,'store']);
+
+
+
 // Route::get('/productlist', function () {
 //     return view('productlist');
 // });
@@ -41,17 +51,19 @@ Route::get('/Abrand', function () {
     return view('Abrand');
 });
 
-Route::post('/login1', [customercontroller::class,'check']);
-
-Route::get('/register', function () {
-    return view('register');
+Route::get('/sessiondelete',function(){
+    if(session()->has('sname'))
+    {
+        session()->pull('sname');
+    }
+    return view('index');
 });
+
+Route::group(['middleware'=>['LoginCheck']], function(){
 
 // Route::get('/cart', function () {
 //     return view('cart');
 // });
-
-Route::post('/register1',[customercontroller::class,'store']);
 
 //Route::get('/Acategory',[CategoryController::class,'create']);
 
@@ -105,10 +117,4 @@ route::post('/feedback1/{id}',[ShoppingController::class,'SCfeedback']);
 
 route::get('/Aviewfeedback',[CategoryController::class,'viewfeed']);
 
-Route::get('/sessiondelete',function(){
-    if(session()->has('sname'))
-    {
-        session()->pull('sname');
-    }
-    return view('index');
-});//to delete a students session
+});

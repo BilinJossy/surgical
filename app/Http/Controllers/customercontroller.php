@@ -127,6 +127,7 @@ class customercontroller extends Controller
                 {
                     $i=customer::select('name','id')->where('email','like',"$getmail")->first();
                     $request->session()->put('sname',$i);
+                    echo "<script>alert('Login Successfull,Welcome');</script>";
                     // echo session('sname');
                     // echo "customer";
                     return redirect ('/productlist');
@@ -134,6 +135,9 @@ class customercontroller extends Controller
                 else if($ut->usertype=='admin')
                 {
                     echo "admin";
+                    // $i=login::select('name','id')->where('email','like',"$u->email")->first();
+                    // $request->session()->put('sname',$i);
+                    // echo "<script>alert('Login Successfull,Welcome');</script>";
                     // $i=faculty::select('id')->where('mailid','like',"$getmail")->first();
                     // echo $i;
                     return view('Ahome');
