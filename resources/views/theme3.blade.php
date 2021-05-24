@@ -5,23 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>SugrShop</title>
-
-
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="../assets/css/flaticon.css">
-    <link rel="stylesheet" href="../assets/css/slicknav.css">
-    <link rel="stylesheet" href="../assets/css/animate.min.css">
-    <link rel="stylesheet" href="../assets/css/magnific-popup.css">
-    <link rel="stylesheet" href="../assets/css/fontawesome-all.min.css">
-    <link rel="stylesheet" href="../assets/css/themify-icons.css">
-    <link rel="stylesheet" href="../assets/css/slick.css">
-    <link rel="stylesheet" href="../assets/css/nice-select.css">
-    <link rel="stylesheet" href="../assets/css/style.css">
-
-
-
+    <title>CareShop||Surgery Perfected</title>
     <link rel="icon" href="../img/favicon.png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
@@ -40,6 +24,7 @@
     <link rel="stylesheet" href="../css/slick.css">
     <!-- style CSS -->
     <link rel="stylesheet" href="../css/style.css">
+
 </head>
 
 <body>
@@ -59,7 +44,7 @@
                         <div class="collapse navbar-collapse main-menu-item" id="navbarSupportedContent">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="index.html">Home</a>
+                                    <a class="nav-link" href="/">Home</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="about.html">about</a>
@@ -70,7 +55,7 @@
                                         product
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown_1">
-                                        <a class="dropdown-item" href="product_list.html"> product list</a>
+                                        <a class="dropdown-item" href="/productlist1"> product list</a>
                                         <a class="dropdown-item" href="single-product.html">product details</a>
                                         
                                     </div>
@@ -125,8 +110,9 @@
         </div>
         <div class="search_input" id="search_input_box">
             <div class="container ">
-                <form class="d-flex justify-content-between search-inner">
-                    <input type="text" class="form-control" id="search_input" placeholder="Search Here">
+                <form class="d-flex justify-content-between search-inner" method="POST" action="search">
+                {{ csrf_field() }}
+                    <input type="text"  name="item" class="form-control" id="search_input" placeholder="Search Here">
                     <button type="submit" class="btn"></button>
                     <span class="ti-close" id="close_search" title="Close Search"></span>
                 </form>
@@ -176,10 +162,10 @@
                     <div class="col-lg-12">
                         <div class="copyright_text">
                             <P><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href=" " target="_blank">Bili</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></P>
                             <div class="copyright_link">
-                                <a href="#">Turms & Conditions</a>
+                                <a href="#">Terms & Conditions</a>
                                 <a href="#">FAQ</a>
                             </div>
                         </div>
@@ -189,28 +175,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         </div>
     </footer>
     <!--::footer_part end::-->
-
-    <!-- jquery plugins here-->
-    <!-- <script src="js/jquery-1.12.1.min.js"></script> -->
-    <!-- popper js -->
-    <!-- <script src="js/popper.min.js"></script> -->
-    <!-- bootstrap js -->
-    <!-- <script src="js/bootstrap.min.js"></script> -->
-    <!-- magnific popup js -->
-    <!-- <script src="js/jquery.magnific-popup.js"></script> -->
-    <!-- carousel js -->
-    <!-- <script src="js/owl.carousel.min.js"></script> -->
-    <!-- <script src="js/jquery.nice-select.min.js"></script> -->
-    <!-- slick js -->
-    <!-- <script src="js/jquery.counterup.min.js"></script> -->
-    <!-- <script src="js/waypoints.min.js"></script> -->
-    <!-- <script src="js/contact.js"></script> -->
-    <!-- <script src="js/jquery.ajaxchimp.min.js"></script> -->
-    <!-- <script src="js/jquery.form.js"></script> -->
-    <!-- <script src="js/jquery.validate.min.js"></script> -->
-    <!-- <script src="js/mail-script.js"></script> -->
-    <!-- custom js -->
-    <!-- <script src="js/custom.js"></script> -->
 
     <script src="../assets/js/vendor/modernizr-3.5.0.min.js"></script>
     <!-- Jquery, Popper, Bootstrap -->
@@ -246,7 +210,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="../assets/js/main.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script> -->
     
-
 
 
 </body>

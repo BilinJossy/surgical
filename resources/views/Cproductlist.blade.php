@@ -1,4 +1,4 @@
-@extends('theme3')
+@extends('theme')
 
 @section('content') 
 
@@ -60,7 +60,7 @@
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
                                 <div class="single-popular-items mb-50 text-center">
                                     <div class="single_product_item">
-                                        <a href="/singleproduct/{{ $i['id'] }}"> 
+                                        <a href="/singleproduct1/{{ $i['id'] }}"> 
                                         <img width="340" height="340" src="{{ URL ::asset('assets/img/gallery/'.$i->image)}}">
                                         <div class="img-cap">
                                         </a>

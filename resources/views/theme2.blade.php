@@ -9,9 +9,7 @@
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>SurgShop</title>
-
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous"> -->
+    <title>CareShop||Surgery Perfected</title>
 
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
@@ -25,7 +23,8 @@
     <link rel="stylesheet" href="../assets/css/nice-select.css">
     <link rel="stylesheet" href="../assets/css/style.css">
 
-    <link rel="icon" href="img/favicon.png">
+
+    <link rel="icon" href="../img/favicon.png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <!-- animate CSS -->
@@ -111,7 +110,7 @@
                                         <a class="dropdown-item" href="/Aviewcust">View Customers</a>
                                         <a class="dropdown-item" href="/Aviewcat">View Orders</a>
                                         <a class="dropdown-item" href="/Aviewfeedback">View Reviews</a>
-                                        
+                                        <a class="dropdown-item" href="/Aviewreport">View Report</a>
                                     </div>
                                 </li>
 
@@ -218,10 +217,10 @@
                     <div class="col-lg-12">
                         <div class="copyright_text">
                             <P><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href=" " target="_blank">Bili</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></P>
                             <div class="copyright_link">
-                                <a href="#">Turms & Conditions</a>
+                                <a href="#">Terms & Conditions</a>
                                 <a href="#">FAQ</a>
                             </div>
                         </div>
@@ -231,32 +230,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         </div>
     </footer>
     <!--::footer_part end::-->
-
-    <!-- jquery plugins here-->
-
-
-
-    <!--<script src="js/jquery-1.12.1.min.js"></script>-->
-    <!-- popper js -->
-    <!-- <script src="js/popper.min.js"></script> -->
-    <!-- bootstrap js -->
-    <!-- <script src="js/bootstrap.min.js"></script> -->
-    <!-- magnific popup js -->
-    <!-- <script src="js/jquery.magnific-popup.js"></script> -->
-    <!-- carousel js -->
-    <!-- <script src="js/owl.carousel.min.js"></script> -->
-    <!-- <script src="js/jquery.nice-select.min.js"></script> -->
-    <!-- slick js -->
-    <!-- <script src="js/slick.min.js"></script> -->
-    <!-- <script src="js/jquery.counterup.min.js"></script> -->
-    <!-- <script src="js/waypoints.min.js"></script> -->
-    <!-- <script src="js/contact.js"></script> -->
-    <!-- <script src="js/jquery.ajaxchimp.min.js"></script> -->
-    <!-- <script src="js/jquery.form.js"></script> -->
-    <!-- <script src="js/jquery.validate.min.js"></script> -->
-    <!-- <script src="js/mail-script.js"></script> -->
-    <!-- custom js -->
-    <!-- <script src="js/custom.js"></script> -->
 
     <script src="../assets/js/vendor/modernizr-3.5.0.min.js"></script>
     <!-- Jquery, Popper, Bootstrap -->

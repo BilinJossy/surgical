@@ -8,6 +8,7 @@ use App\Models\BrandModel;
 use App\Models\ProductModel;
 use App\Models\FeedbackModel;
 use App\Models\customer;
+use App\Models\OrderModel;
 
 
 class CategoryController extends Controller
@@ -276,6 +277,24 @@ class CategoryController extends Controller
 
     }
 
+    public function vieworder()
+    {
+        $item=OrderModel::all();
+
+        return view('Aviewreport',compact('item'));
+    }
+
+    public function getreport()
+    {
+        $getdate1=request('date1');
+        $getdate2=request('date2');
+          
+        $item=OrderModel::select('*')
+        ->whereBetween('odate', [$getdate1, $getdate2])->get();
+        
+        return view('Aviewreport',compact('item'));
+    }
+
     // public function viewproduct()
     // {
     //     $item=ProductModel::all();
@@ -324,8 +343,18 @@ class CategoryController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function home()
     {
-        //
+        return view('Ahome');
+    }
+
+    public function category()
+    {
+        return view('Acategory');
+    }
+
+    public function brand()
+    {
+        return view('Abrand');
     }
 }

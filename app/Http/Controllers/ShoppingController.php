@@ -34,10 +34,24 @@ class ShoppingController extends Controller
         
     }
 
+    public function viewproduct1()
+    {
+        $item=ProductModel::all();
+        return view('Cproductlist',compact('item'));
+        
+    }
+
+
     public function prdetails($id)
     {
         $det = ProductModel::find($id);
         return view ('singleproduct',compact('det'));
+    }
+
+    public function prdetails1($id)
+    {
+        $det = ProductModel::find($id);
+        return view ('Csingleproduct',compact('det'));
     }
 
 
@@ -140,8 +154,8 @@ class ShoppingController extends Controller
     }
 
 
-    function payment(Request $req)
-{
+    public function payment(Request $req)
+    {
     $userid=$req->session()->get('sname') ['id'];
     $total=$products=DB::table('cart_models')
     ->join('product_models','cart_models.pid','=','product_models.id')
@@ -151,22 +165,22 @@ class ShoppingController extends Controller
     
     return view('payment',['total'=>$total]);
     
-}
+    }
 
-function vieworder(Request $req)
-{
+    public function vieworder(Request $req)
+    {
     $userid=$req->session()->get('sname') ['id'];
     $c=OrderModel::where('cid','=',$userid)-> with('customer','order')->get();
     return view('/Myorders',compact('c'));
-}
+    }
 
-public function Cfeedback($id)
+    public function Cfeedback($id)
     {
         $item=OrderModel::find($id);
         return view('feedback',compact('item'));
     }
 
-public function SCfeedback($id , Request $request)
+    public function SCfeedback($id , Request $request)
     {
         $getcom=request('comment');
 
@@ -180,6 +194,24 @@ public function SCfeedback($id , Request $request)
         return redirect('/Myorders');
     }
 
+    public function searchproduct(Request $request)
+    {
+    $getitem=request('item');
+    $itemid=ProductModel::where('name','=',$getitem)->first();
+    if(!$itemid)
+    {
+        echo "<script>alert('Item not found');window.location='/productlist';</script>";  
+    }
+    else
+    {
+        $item=ProductModel::query()
+    ->where('name', 'LIKE' , "%{$itemid->name}%")
+    ->get();
+    }
+    
+    return view('productlist',compact('item'));
+    }
+    
 
     /**
      * Show the form for creating a new resource.

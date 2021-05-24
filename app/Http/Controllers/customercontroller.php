@@ -134,13 +134,16 @@ class customercontroller extends Controller
                 }
                 else if($ut->usertype=='admin')
                 {
-                    echo "admin";
+                    // echo "admin";
                     // $i=login::select('name','id')->where('email','like',"$u->email")->first();
-                    // $request->session()->put('sname',$i);
+                    // $j=login::select('name')->where('email','like',"$getmail")->first();
+                    // echo $j;
+                    $request->session()->put('sname','admin');
                     // echo "<script>alert('Login Successfull,Welcome');</script>";
                     // $i=faculty::select('id')->where('mailid','like',"$getmail")->first();
-                    // echo $i;
-                    return view('Ahome');
+                    // // echo $i;
+                    // return view('Ahome');
+                    return redirect ('/Ahome');
                 
                 }
                 

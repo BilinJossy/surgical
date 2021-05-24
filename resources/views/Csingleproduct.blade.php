@@ -1,4 +1,4 @@
-@extends('theme3')
+@extends('theme')
 
 @section('content')
 
@@ -24,13 +24,13 @@
           <div class="product_img_slide owl-carousel">
             <div class="single_product_img">
             {{csrf_field()}}
-              <img width="340" height="340" src="{{ URL ::asset('assets/img/gallery/'.$det->image) }}" class="img-fluid">
+              <img width="150" height="100" src="{{ URL ::asset('assets/img/gallery/'.$det->image) }}" class="img-fluid">
             </div>
           </div>
         </div>
         <div class="col-lg-7">
           <div class="single_product_text text-center">
-          <h4>{{ $det['name'] }}</h4>
+            <h4>{{ $det['name'] }}</h4>
             <br>
             <p>{{ $det['des'] }}</p>
             <p>
@@ -43,7 +43,7 @@
                     <p>Quantity</p>
                     <div class="product_count d-inline-block">
                         <span class="product_count_item inumber-decrement"> <i class="ti-minus"></i></span>
-                        <input name="qty" class="product_count_item input-number" type="text" value="1" min="0" max="{{ $det['qty'] }}">
+                        <input name="qty" class="product_count_item input-number" type="text" value="1" min="0" max= "{{ $det['qty'] }}">
                         <span class="product_count_item number-increment"> <i class="ti-plus"></i></span>
                     </div>
                     <!-- <p>$5</p> -->

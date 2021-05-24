@@ -23,33 +23,25 @@ Route::get('/login', function () {
     return view('login');
 });
 
-Route::post('/login1', [customercontroller::class,'check']);
+
 
 Route::get('/register', function () {
     return view('register');
 });
 
+Route::post('/login1', [customercontroller::class,'check']);
+
 Route::post('/register1',[customercontroller::class,'store']);
+
+route::get('/productlist1',[ShoppingController::class,'viewproduct1']);
+
+route::get('/singleproduct1/{id}',[ShoppingController::class,'prdetails1']);
 
 
 
 // Route::get('/productlist', function () {
 //     return view('productlist');
 // });
-
-Route::get('/Ahome', function () {
-    return view('Ahome');
-});
-
-
-
-Route::get('/Acategory', function () {
-    return view('Acategory');
-});
-
-Route::get('/Abrand', function () {
-    return view('Abrand');
-});
 
 Route::get('/sessiondelete',function(){
     if(session()->has('sname'))
@@ -66,6 +58,12 @@ Route::group(['middleware'=>['LoginCheck']], function(){
 // });
 
 //Route::get('/Acategory',[CategoryController::class,'create']);
+
+Route::get('/Ahome',[CategoryController::class,'home']);
+
+Route::get('/Acategory', [CategoryController::class,'category']);
+
+Route::get('/Abrand', [CategoryController::class,'brand']);
 
 Route::post('/Acategory1',[CategoryController::class,'store']);
 
@@ -116,5 +114,13 @@ route::get('/feedback/{id}',[ShoppingController::class,'Cfeedback']);
 route::post('/feedback1/{id}',[ShoppingController::class,'SCfeedback']);
 
 route::get('/Aviewfeedback',[CategoryController::class,'viewfeed']);
+
+route::post('/Aviewreport',[CategoryController::class,'getreport']);
+
+route::get('/Aviewreport',[CategoryController::class,'vieworder']);
+
+route::post('/search',[ShoppingController::class,'searchproduct']);
+
+
 
 });
