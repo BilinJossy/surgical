@@ -22,8 +22,9 @@
                 <div class="col-md-4">
                     <div class="product_sidebar">
                         <div class="single_sedebar">
-                            <form action="#">
-                                <input type="text" name="#" placeholder="Search keyword">
+                        <form action="search1" method="POST">
+                            {{ csrf_field() }}
+                                <input type="text" name="item" placeholder="Search keyword">
                                 <i class="ti-search"></i>
                             </form>
                         </div>
@@ -53,13 +54,12 @@
                 </div>
                 <div class="col-md-8">
                     <div class="product_list">
-                        <div class="row">
+                        <div class="row"> 
                         {{csrf_field()}}
-                         @foreach ($item as $i) 
-                         
+                         @foreach ($item as $i)
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
                                 <div class="single-popular-items mb-50 text-center">
-                                    <div class="single_product_item">
+                                    <div class="popular-img">
                                         <a href="/singleproduct1/{{ $i['id'] }}"> 
                                         <img width="340" height="340" src="{{ URL ::asset('assets/img/gallery/'.$i->image)}}">
                                         <div class="img-cap">
@@ -81,8 +81,9 @@
                                         <p>Rs:{{ $i['sell'] }}</p> 
                                     </div>
                                 </div>
+                                @endforeach
                             </div>
-                            @endforeach
+                            
                             </div>
 
                             <!-- <div class="col-lg-6 col-sm-6">

@@ -22,8 +22,9 @@
                 <div class="col-md-4">
                     <div class="product_sidebar">
                         <div class="single_sedebar">
-                            <form action="#">
-                                <input type="text" name="#" placeholder="Search keyword">
+                            <form action="search" method="POST">
+                            {{ csrf_field() }}
+                                <input type="text" name="item" placeholder="Search keyword">
                                 <i class="ti-search"></i>
                             </form>
                         </div>
@@ -56,7 +57,6 @@
                         <div class="row">
                         {{csrf_field()}}
                          @foreach ($item as $i) 
-                         
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
                                 <div class="single-popular-items mb-50 text-center">
                                     <div class="single_product_item">

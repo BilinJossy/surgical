@@ -37,6 +37,8 @@ route::get('/productlist1',[ShoppingController::class,'viewproduct1']);
 
 route::get('/singleproduct1/{id}',[ShoppingController::class,'prdetails1']);
 
+route::post('/search1',[ShoppingController::class,'searchproduct1']);
+
 
 
 // Route::get('/productlist', function () {

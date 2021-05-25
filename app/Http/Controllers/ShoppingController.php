@@ -212,7 +212,23 @@ class ShoppingController extends Controller
     return view('productlist',compact('item'));
     }
     
-
+    public function searchproduct1(Request $request)
+    {
+    $getitem=request('item');
+    $itemid=ProductModel::where('name','=',$getitem)->first();
+    if(!$itemid)
+    {
+        echo "<script>alert('Item not found');window.location='/productlist1';</script>";  
+    }
+    else
+    {
+        $item=ProductModel::query()
+    ->where('name', 'LIKE' , "%{$itemid->name}%")
+    ->get();
+    }
+    
+    return view('productlist1',compact('item'));
+    }
     /**
      * Show the form for creating a new resource.
      *
