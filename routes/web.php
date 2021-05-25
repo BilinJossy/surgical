@@ -39,6 +39,13 @@ route::get('/singleproduct1/{id}',[ShoppingController::class,'prdetails1']);
 
 route::post('/search1',[ShoppingController::class,'searchproduct1']);
 
+route::get('/about',[customercontroller::class,'about']);
+
+route::get('/blog',[customercontroller::class,'blog']);
+
+route::get('/singleblog',[customercontroller::class,'singleblog']);
+
+route::get('/contact',[customercontroller::class,'contact']);
 
 
 // Route::get('/productlist', function () {
@@ -123,6 +130,11 @@ route::get('/Aviewreport',[CategoryController::class,'vieworder']);
 
 route::post('/search',[ShoppingController::class,'searchproduct']);
 
+route::get('/Myprofile',[CategoryController::class,'profile']);
+
+route::get('/editprofile/{id}',[CategoryController::class,'editprofile']);
+
+route::post('/customereditprocess/{id}',[CategoryController::class,'updateprofile']);
 
 
 });

@@ -9,6 +9,10 @@ use App\Models\ProductModel;
 use App\Models\FeedbackModel;
 use App\Models\customer;
 use App\Models\OrderModel;
+use session;
+use Carbon\Carbon;
+use App\Models\login;
+
 
 
 class CategoryController extends Controller
@@ -293,6 +297,38 @@ class CategoryController extends Controller
         ->whereBetween('odate', [$getdate1, $getdate2])->get();
         
         return view('Aviewreport',compact('item'));
+    }
+
+    public function profile(Request $req)
+    {
+        $data =$req->session()->get('sname') ['id'];
+        $var = ['var'=>customer::where('id','=',$data)->first()];
+    
+        return view ('Myprofile')->with($var);
+    }
+
+    public function editprofile($id)
+    {
+        $cview=customer::find($id);
+
+        return view('editprofile',compact('cview'));
+    }
+
+    public function updateprofile(Request $request, $id)
+    {
+        $l = customer::find($id);
+        $uname = request('name');
+        $uaddress = request('address');
+        $upin = request('pincode');
+
+        
+
+        $l->name=$uname;
+        $l->address=$uaddress;
+        $l->pincode=$upin;
+        $l->save();
+
+        return redirect('/Myprofile');
     }
 
     // public function viewproduct()

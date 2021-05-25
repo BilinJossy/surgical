@@ -23,7 +23,7 @@
                 <div class="col-lg-8">
                     <div class="about_us_content">
                         <h5>Our Mission</h5>
-                        <h3>Donec imperdiet congue orci consequat mattis. Donec rutrum porttitor sollicitudin. Pellentesque id dolor tempor sapien feugiat ultrices nec sed neque.</h3>
+                        <h3>Surgery usually spans from minutes to hours, but it is typically not an ongoing or periodic type of treatment. The term "surgery" can also refer to the place where surgery is performed, or, in British English, simply the office of a physician, dentist, or veterinarian.</h3>
                         <div class="about_us_video">
                             <img src="img/about_us_video.png" alt="#" class="img-fluid">
                             <a class="about_video_icon popup-youtube" href="https://www.youtube.com/watch?v=DWHB6nTyKDI"></a>
@@ -41,14 +41,12 @@
             <div class="row justify-content-between">
                 <div class="col-lg-6">
                     <div class="feature_part_tittle">
-                        <h3>Credibly innovate granular
-                        internal or organic sources
-                        whereas standards.</h3>
+                        <h3>Surgery is a medical or dental specialty that uses operative manual.</h3>
                     </div>
                 </div>
                 <div class="col-lg-5">
                     <div class="feature_part_content">
-                        <p>Seamlessly empower fully researched growth strategies and interoperable internal or “organic” sources. Credibly innovate granular internal or “organic” sources whereas high standards in web-readiness.</p>
+                        <p>The act of performing surgery may be called a surgical procedure, operation, or simply "surgery". In this context, the verb "operate" means to perform surgery. The adjective surgical means pertaining to surgery; e.g. surgical instruments or surgical nurse.</p>
                     </div>
                 </div>
             </div>

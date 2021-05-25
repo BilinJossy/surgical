@@ -41,12 +41,18 @@ class customercontroller extends Controller
     {
         $cname=request('name');
         $cmail=request('email');
+        $cphno=request('phno');
+        $uaddress = request('address');
+        $upin = request('pincode');
         $cpass=request('password');
         $copass=request('confirmpassword');
 
         $this->validate($request,[
             'name'=>'required',
             'email'=>'required|email',
+            'phno'=>'required|min:10|max:10',
+            'address'=>'required',
+            'pincode'=>'required',
             'password'=>'required|min:5|max:15',
             'confirmpassword'=>'required|min:5|max:15'
         ]);
@@ -61,6 +67,9 @@ class customercontroller extends Controller
 
         $c->name=$cname;
         $c->email=$cmail;
+        $c->phoneno=$cphno;
+        $c->address=$uaddress;
+        $c->pincode=$upin;
         $c->password=$cpass;
 
         $l->name=$cname;
@@ -96,6 +105,26 @@ class customercontroller extends Controller
             echo "<script>alert('Password is not correct......');window.location='/register';</script>"; 
         }
         
+    }
+
+    public function about()
+    {
+        return view('about');
+    }
+
+    public function blog()
+    {
+        return view('blog');
+    }
+
+    public function singleblog()
+    {
+        return view('singleblog');
+    }
+
+    public function contact()
+    {
+        return view('contact');
     }
 
     public function check(Request $request)

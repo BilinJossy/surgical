@@ -11,7 +11,7 @@
                         <div class="banner_text_iner">
                             <h1>Surgical
                                 Equipments</h1>
-                            <a href="product_list.html" class="btn_1">shop now</a>
+                            <a href="/productlist1" class="btn_1">shop now</a>
                         </div>
                     </div>
                 </div>
@@ -109,45 +109,43 @@
                         <div class="single_product_item_thumb">
                             <img src="img/tranding_item/tranding_item_1.png" alt="#" class="img-fluid">
                         </div>
-                        <h3> <a href="single-product.html">Cervical pillow for airplane
-                        car office nap pillow</a> </h3>
-                        <p>From $5</p>
+                        <h3> <a href="single-product.html">Personal Protection Equipment Kit PPE Kit - G2</a> </h3>
+                        <p>From Rs.500</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <div class="single_product_item">
                         <img src="img/tranding_item/tranding_item_2.png" alt="#" class="img-fluid">
-                        <h3> <a href="single-product.html">Foam filling cotton slow rebound pillows</a> </h3>
-                        <p>From $5</p>
+                        <h3> <a href="single-product.html">BPL Smart Oxy Lite Finger Tip Pulse Oximeter</a> </h3>
+                        <p>From Rs.250</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <div class="single_product_item">
                         <img src="img/tranding_item/tranding_item_3.png" alt="#" class="img-fluid">
-                        <h3> <a href="single-product.html">Memory foam filling cotton Slow rebound pillows</a> </h3>
-                        <p>From $5</p>
+                        <h3> <a href="single-product.html">Romsons Nel Cath Nelaton Catheter</a> </h3>
+                        <p>From Rs.3000</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <div class="single_product_item">
                         <img src="img/tranding_item/tranding_item_4.png" alt="#" class="img-fluid">
-                        <h3> <a href="single-product.html">Cervical pillow for airplane
-                        car office nap pillow</a> </h3>
-                        <p>From $5</p>
+                        <h3> <a href="single-product.html">Romsons Male Cath Male External Catheter</a> </h3>
+                        <p>From Rs.2500</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <div class="single_product_item">
                         <img src="img/tranding_item/tranding_item_5.png" alt="#" class="img-fluid">
-                        <h3> <a href="single-product.html">Foam filling cotton slow rebound pillows</a> </h3>
-                        <p>From $5</p>
+                        <h3> <a href="single-product.html">BPL Smart Oxy Pulse Oximeter</a> </h3>
+                        <p>From Rs.3500</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <div class="single_product_item">
                         <img src="img/tranding_item/tranding_item_6.png" alt="#" class="img-fluid">
-                        <h3> <a href="single-product.html">Memory foam filling cotton Slow rebound pillows</a> </h3>
-                        <p>From $5</p>
+                        <h3> <a href="single-product.html">N95 Anti Pollution Face Mask 8210 - 5 Pack</a> </h3>
+                        <p>From Rs.100</p>
                     </div>
                 </div>
             </div>
@@ -172,15 +170,15 @@
                             <div class="client_img">
                                 <img src="img/client_1.png" alt="#">
                             </div>
-                            <p>"Working in conjunction with humanitarian aid agencies, we have supported programmes to help alleviate human suffering.</p>
-                            <h5>- Micky Mouse</h5>
+                            <p>"Medical supplies, medical equipment accessories and medical equipment  gets delivered at your doorstep.</p>
+                            <h5>- Philip Thomas</h5>
                         </div>
                         <div class="single_client_review">
                             <div class="client_img">
                                 <img src="img/client_2.png" alt="#">
                             </div>
-                            <p>"Working in conjunction with humanitarian aid agencies, we have supported programmes to help alleviate human suffering.</p>
-                            <h5>- Micky Mouse</h5>
+                            <p>"online medical storeis a trusted online medical equipment dealer and is amongst the best medical devices suppliers.</p>
+                            <h5>- Edinson James</h5>
                         </div>
                     </div>
                 </div>
@@ -196,14 +194,12 @@
             <div class="row justify-content-between">
                 <div class="col-lg-6">
                     <div class="feature_part_tittle">
-                        <h3>Credibly innovate granular
-                        internal or organic sources
-                        whereas standards.</h3>
+                        <h3>Surgery is a medical or dental specialty that uses operative manual.</h3>
                     </div>
                 </div>
                 <div class="col-lg-5">
                     <div class="feature_part_content">
-                        <p>Seamlessly empower fully researched growth strategies and interoperable internal or “organic” sources. Credibly innovate granular internal or “organic” sources whereas high standards in web-readiness.</p>
+                        <p>The act of performing surgery may be called a surgical procedure, operation, or simply "surgery". In this context, the verb "operate" means to perform surgery. The adjective surgical means pertaining to surgery; e.g. surgical instruments or surgical nurse.</p>
                     </div>
                 </div>
             </div>

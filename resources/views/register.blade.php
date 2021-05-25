@@ -65,6 +65,23 @@
                                     
                                     </div>
                                     <div class="col-md-12 form-group p_star">
+                                        <input type="text" class="form-control" id="phone" name="phno" value=""
+                                            placeholder="Phone Number">
+
+                                        <span style="color:red" >@error('phno') {{$message}} @enderror</span>
+                                    
+                                    </div>
+                                    <div class="col-md-12 form-group p_star">
+                                        <input type="text" class="form-control" id="address" name="address" value=""
+                                            placeholder="Address">
+                                            <span style="color:red" >@error('address') {{$message}} @enderror</span>
+                                    </div>
+                                    <div class="col-md-12 form-group p_star">
+                                        <input type="text" class="form-control" id="pincode" name="pincode" value=""
+                                            placeholder="Pincode">
+                                            <span style="color:red" >@error('pincode') {{$message}} @enderror</span>
+                                    </div>
+                                    <div class="col-md-12 form-group p_star">
                                         <input type="password" class="form-control" id="password" name="password" value=""
                                             placeholder="Password">
 

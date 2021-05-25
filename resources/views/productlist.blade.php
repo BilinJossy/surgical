@@ -85,13 +85,7 @@
                             @endforeach
                             </div>
 
-                            <!-- <div class="col-lg-6 col-sm-6">
-                                <div class="single_product_item">
-                                    <img src="{{ URL ::asset('assets/img/gallery/'.$i->image)}}" alt="#" class="img-fluid">
-                                    <h3> <a href="single-product.html">Cervical pillow for airplane
-                                    car office nap pillow</a> </h3>
-                                    <p>From $5</p>
-                                </div>  -->
+                        
                             
                             <!-- <div class="col-lg-6 col-sm-6">
                                 <div class="single_product_item">
@@ -267,4 +261,4 @@
     </section>
     <!-- subscribe part end -->
 
- <!-- @endsection -->
+ @endsection
