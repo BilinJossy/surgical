@@ -106,7 +106,7 @@ class customercontroller extends Controller
         }
         
     }
-    public function check1(Request $req)
+    public function check1(Request $request)
     {
         $cmail=request('email');
         $cpass=request('password');
