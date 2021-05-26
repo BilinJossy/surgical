@@ -58,6 +58,27 @@
                             </form>
                         </div>
                     </div>
+                    <form class="row contact_form" action="/login2" method="post" novalidate="novalidate">
+                            {{csrf_field()}}
+                                <div class="col-md-12 form-group p_star">
+                                    <input type="text" class="form-control" id="name" name="email" value=""
+                                        placeholder="E-Mail Address" required>
+                                </div>
+                                <div class="col-md-12 form-group p_star">
+                                    <input type="password" class="form-control" id="password" name="password" value=""
+                                        placeholder="Password" required>
+                                </div>
+                                <div class="col-md-12 form-group">
+                                    <div class="creat_account d-flex align-items-center">
+                                        <input type="checkbox" id="f-option" name="selector">
+                                        <label for="f-option">Remember me</label>
+                                    </div>
+                                    <button type="submit" value="submit" class="btn_3">
+                                        log in
+                                    </button>
+                                    <a class="lost_pass" href="#">forget password?</a>
+                                </div>
+                            </form>
                 </div>
             </div>
         </div>

@@ -31,6 +31,8 @@ Route::get('/register', function () {
 
 Route::post('/login1', [customercontroller::class,'check']);
 
+Route::post('/login2', [customercontroller::class,'check1']);
+
 Route::post('/register1',[customercontroller::class,'store']);
 
 route::get('/productlist1',[ShoppingController::class,'viewproduct1']);
