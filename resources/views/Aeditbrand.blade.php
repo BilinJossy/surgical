@@ -11,12 +11,12 @@
      <tr>
          <td> NAME </td>
          <td>
-          <input value="{{   $item->bname }}" name="name" type="text" class="form-control">
+          <input value="{{   $item->bname }}" name="name" type="text" class="form-control" required>
          </td>
      </tr>
      <tr>
          <td>DESCRIPTION</td>
-         <td>      <input value="{{   $item->bdes}}" name="desc" type="text" class="form-control">
+         <td>      <input value="{{   $item->bdes}}" name="desc" type="text" class="form-control" required>
     </td>
      </tr>
      <tr>

@@ -20,7 +20,7 @@
      <tr>
          <td> COMMENT </td>
          <td>
-          <input value=" " name="comment" type="text" class="form-control">
+          <input value=" " name="comment" type="text" class="form-control" required>
          </td>
      </tr>
     

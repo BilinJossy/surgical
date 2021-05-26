@@ -40,17 +40,17 @@
  <tr>
      <td>Customer-Name </td>
      <td>
-      <input value="{{$cview->name}}" name="name" type="text" class="form-control">
+      <input value="{{$cview->name}}" name="name" type="text" class="form-control" required>
      </td>
  </tr>
  <tr>
      <td>Address</td>
-     <td>      <input value="{{$cview->address}}" name="address" type="text" class="form-control">
+     <td>      <input value="{{$cview->address}}" name="address" type="text" class="form-control" required>
 </td>
  </tr>
  <tr>
      <td>Pincode</td>
-     <td>      <input value="{{$cview->pincode}}" name="pincode" type="text" class="form-control">
+     <td>      <input value="{{$cview->pincode}}" name="pincode" type="text" class="form-control" required>
 </td>
  </tr>
  <tr>

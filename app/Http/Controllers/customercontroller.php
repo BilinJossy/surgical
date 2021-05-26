@@ -127,6 +127,22 @@ class customercontroller extends Controller
         return view('contact');
     }
 
+    public function elements()
+    {
+        return view('elements');
+    }
+
+    public function ind()
+    {
+        return view('Cindex');
+    }
+
+    public function blog1()
+    {
+        return view('Cblog');
+    }
+
+
     public function check(Request $request)
     {
         $getmail=request('email');

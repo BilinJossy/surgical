@@ -48,37 +48,12 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="/about">about</a>
                                 </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown_1"
-                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Shop
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown_1">
-                                        <a class="dropdown-item" href="/productlist1"> Product List</a>
+                                <li class="nav-item ">
+                                    
+                                        <a class="nav-link" href="/productlist1">Shop</a>
                                         <!-- <a class="dropdown-item" href="single-product.html">product details</a> -->
-                                        
-                                    </div>
                                 </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown_3"
-                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Pages
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown_2">
-                                        <a class="dropdown-item" href="/login"> 
-                                            Login
-                                            
-                                        </a>
-                                        <!-- <a class="dropdown-item" href="checkout.html">product checkout</a>
-                                        <a class="dropdown-item" href="cart.html">shopping cart</a>
-                                        <a class="dropdown-item" href="confirmation.html">confirmation</a>
-                                        <a class="dropdown-item" href="elements.html">elements</a> -->
-                                        <!-- <a class="dropdown-item" href="/sessiondelete"> 
-                                            logout -->
-                                            
-                                        </a>
-                                    </div>
-                                </li>
+                                
                                 
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown_2"
@@ -92,7 +67,28 @@
                                 </li>
                                 
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/contact">Contact</a>
+                                    <a class="nav-link" href="/contact">Contact Us</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <!-- <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown_3"
+                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Pages
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown_2"> -->
+                                        <a class="nav-link" href="/login"> 
+                                            Login||Register
+                                            
+                                        </a>
+                                        <!-- <a class="dropdown-item" href="/elements">elements</a> -->
+                                        <!-- <a class="dropdown-item" href="checkout.html">product checkout</a>
+                                        <a class="dropdown-item" href="cart.html">shopping cart</a>
+                                        <a class="dropdown-item" href="confirmation.html">confirmation</a>
+                                        <a class="dropdown-item" href="elements.html">elements</a> 
+                                        <a class="dropdown-item" href="/sessiondelete"> 
+                                            logout -->
+                                            
+                                        <!-- </a> -->
+                                    <!-- </div> -->
                                 </li>
                             </ul>
                         </div>
@@ -133,12 +129,12 @@
                                 <a href="index.html"><img src="../img/logo.png" alt="#"></a>
                             </div>
                             <div class="footer_menu_item">
-                                <a href="index.html">Home</a>
-                                <a href="about.html">About</a>
-                                <a href="product_list.html">Products</a>
-                                <a href="#">Pages</a>
-                                <a href="blog.html">Blog</a>
-                                <a href="contact.html">Contact</a>
+                                <a href="/">Home</a>
+                                <a href="/about">About</a>
+                                <a href="/productlist1">Shop</a>
+                                
+                                <a href="/blog">Blog</a>
+                                <a href="/contact">Contact</a>
                             </div>
                         </div>
                     </div>

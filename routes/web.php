@@ -47,6 +47,7 @@ route::get('/singleblog',[customercontroller::class,'singleblog']);
 
 route::get('/contact',[customercontroller::class,'contact']);
 
+route::get('/elements',[customercontroller::class,'elements']);
 
 // Route::get('/productlist', function () {
 //     return view('productlist');
@@ -67,6 +68,9 @@ Route::group(['middleware'=>['LoginCheck']], function(){
 // });
 
 //Route::get('/Acategory',[CategoryController::class,'create']);
+Route::get('/index', [customercontroller::class,'ind']);
+
+route::get('/Cblog',[customercontroller::class,'blog1']);
 
 Route::get('/Ahome',[CategoryController::class,'home']);
 

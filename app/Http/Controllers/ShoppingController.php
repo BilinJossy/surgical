@@ -227,7 +227,7 @@ class ShoppingController extends Controller
     ->get();
     }
     
-    return view('productlist1',compact('item'));
+    return view('Cproductlist',compact('item'));
     }
     /**
      * Show the form for creating a new resource.

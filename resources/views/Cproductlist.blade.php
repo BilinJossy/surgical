@@ -13,9 +13,7 @@
             </div>
         </div>
     </section>
-    <!-- breadcrumb part end-->
     
-    <!-- product list part start-->
     <section class="product_list section_padding">
         <div class="container">
             <div class="row">
@@ -64,20 +62,15 @@
                                         <img width="340" height="340" src="{{ URL ::asset('assets/img/gallery/'.$i->image)}}">
                                         <div class="img-cap">
                                         </a>
-                                        <!-- <form action="/singleproduct/{id}" method="POST"> -->
-                                             <!-- <span><a href="/singleproduct/{{ $i['id'] }}">View Products</a></span>  -->
-                                            <!-- {{ csrf_field() }} -->
-                                            <!-- <input type="hidden" name="qty" value= "1" > -->
+                                        
                                             <input type="hidden" name="item" value="{{ $i['id'] }}">
-                                            <!-- <span><button class="btn btn-danger">add to cart</button> </span> </form>-->
                                         </div>
-                                        <!-- <div class="favorit-items">
-                                            <span class="flaticon-heart"></span> -->
+                                        
                                         </div>
                                     </div>
                                     <div class="popular-caption">
                                         <h3>{{ $i['name'] }}</h3>
-                                        <!-- <h3>{{ $i['des'] }}</h3>  -->
+                                        
                                         <p>Rs:{{ $i['sell'] }}</p> 
                                     </div>
                                 </div>
@@ -86,78 +79,7 @@
                             
                             </div>
 
-                            <!-- <div class="col-lg-6 col-sm-6">
-                                <div class="single_product_item">
-                                    <img src="{{ URL ::asset('assets/img/gallery/'.$i->image)}}" alt="#" class="img-fluid">
-                                    <h3> <a href="single-product.html">Cervical pillow for airplane
-                                    car office nap pillow</a> </h3>
-                                    <p>From $5</p>
-                                </div>  -->
                             
-                            <!-- <div class="col-lg-6 col-sm-6">
-                                <div class="single_product_item">
-                                    <img src="img/product/product_list_2.png" alt="#" class="img-fluid">
-                                    <h3> <a href="single-product.html">Geometric striped flower home classy decor</a> </h3>
-                                    <p>From $5</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-sm-6">
-                                <div class="single_product_item">
-                                    <img src="img/product/product_list_3.png" alt="#" class="img-fluid">
-                                    <h3> <a href="single-product.html">Foam filling cotton slow rebound pillows</a> </h3>
-                                    <p>From $5</p>
-                                </div>
-                            </div> -->
-                            <!-- <div class="col-lg-6 col-sm-6">
-                                <div class="single_product_item">
-                                    <img src="img/product/product_list_4.png" alt="#" class="img-fluid">
-                                    <h3> <a href="single-product.html">Memory foam filling cotton Slow rebound pillows</a> </h3>
-                                    <p>From $5</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-sm-6">
-                                <div class="single_product_item">
-                                    <img src="img/product/product_list_5.png" alt="#" class="img-fluid">
-                                    <h3> <a href="single-product.html">Memory foam filling cotton Slow rebound pillows</a> </h3>
-                                    <p>From $5</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-sm-6">
-                                <div class="single_product_item">
-                                    <img src="img/product/product_list_6.png" alt="#" class="img-fluid">
-                                    <h3> <a href="single-product.html">Sleeping orthopedic sciatica Back Hip Joint Pain relief</a> </h3>
-                                    <p>From $5</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-sm-6">
-                                <div class="single_product_item">
-                                    <img src="img/product/product_list_7.png" alt="#" class="img-fluid">
-                                    <h3> <a href="single-product.html">Memory foam filling cotton Slow rebound pillows</a> </h3>
-                                    <p>From $5</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-sm-6">
-                                <div class="single_product_item">
-                                    <img src="img/product/product_list_8.png" alt="#" class="img-fluid">
-                                    <h3> <a href="single-product.html">Sleeping orthopedic sciatica Back Hip Joint Pain relief</a> </h3>
-                                    <p>From $5</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-sm-6">
-                                <div class="single_product_item">
-                                    <img src="img/product/product_list_9.png" alt="#" class="img-fluid">
-                                    <h3> <a href="single-product.html">Geometric striped flower home classy decor</a> </h3>
-                                    <p>From $5</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-sm-6">
-                                <div class="single_product_item">
-                                    <img src="img/product/product_list_10.png" alt="#" class="img-fluid">
-                                    <h3> <a href="single-product.html">Geometric striped flower home classy decor</a> </h3>
-                                    <p>From $5</p>
-                                </div>
-                            </div>
-                        </div>  -->
                         <div class="load_more_btn text-center">
                             <a href="#" class="btn_3">Load More</a>
                         </div>
@@ -166,9 +88,7 @@
             </div>
         </div>
     </section>
-    <!-- product list part end-->
     
-    <!-- client review part here -->
     <section class="client_review">
         <div class="container">
             <div class="row justify-content-center">
@@ -200,9 +120,7 @@
             </div>
         </div>
     </section>
-    <!-- client review part end -->
-
-    <!-- feature part here -->
+    
     <section class="feature_part section_padding">
         <div class="container">
             <div class="row justify-content-between">
@@ -247,9 +165,7 @@
             </div>
         </div>
     </section>
-    <!-- feature part end -->
-
-    <!-- subscribe part here -->
+   
     <section class="subscribe_part section_padding">
         <div class="container">
             <div class="row justify-content-center">
@@ -266,6 +182,6 @@
             </div>
         </div>
     </section>
-    <!-- subscribe part end -->
+    
 
- <!-- @endsection -->
+ @endsection 

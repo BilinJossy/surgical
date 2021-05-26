@@ -1,4 +1,4 @@
-@extends('theme')
+@extends('theme3')
 
 @section('content')
 
@@ -11,7 +11,7 @@
                         <div class="banner_text_iner">
                             <h1>Surgical
                                 Equipments</h1>
-                            <a href="/productlist1" class="btn_1">shop now</a>
+                            <a href="/productlist" class="btn_1">Shop now</a>
                         </div>
                     </div>
                 </div>
@@ -109,42 +109,42 @@
                         <div class="single_product_item_thumb">
                             <img src="img/tranding_item/tranding_item_1.png" alt="#" class="img-fluid">
                         </div>
-                        <h3> <a href="/productlist1">Personal Protection Equipment Kit PPE Kit - G2</a> </h3>
+                        <h3> <a href="/productlist">Personal Protection Equipment Kit PPE Kit - G2</a> </h3>
                         <p>From Rs.500</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <div class="single_product_item">
                         <img src="img/tranding_item/tranding_item_2.png" alt="#" class="img-fluid">
-                        <h3> <a href="/productlist1">BPL Smart Oxy Lite Finger Tip Pulse Oximeter</a> </h3>
+                        <h3> <a href="/productlist">BPL Smart Oxy Lite Finger Tip Pulse Oximeter</a> </h3>
                         <p>From Rs.250</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <div class="single_product_item">
                         <img src="img/tranding_item/tranding_item_3.png" alt="#" class="img-fluid">
-                        <h3> <a href="/productlist1">Romsons Nel Cath Nelaton Catheter</a> </h3>
+                        <h3> <a href="/productlist">Romsons Nel Cath Nelaton Catheter</a> </h3>
                         <p>From Rs.3000</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <div class="single_product_item">
                         <img src="img/tranding_item/tranding_item_4.png" alt="#" class="img-fluid">
-                        <h3> <a href="/productlist1">Romsons Male Cath Male External Catheter</a> </h3>
+                        <h3> <a href="/productlist">Romsons Male Cath Male External Catheter</a> </h3>
                         <p>From Rs.2500</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <div class="single_product_item">
                         <img src="img/tranding_item/tranding_item_5.png" alt="#" class="img-fluid">
-                        <h3> <a href="/productlist1">BPL Smart Oxy Pulse Oximeter</a> </h3>
+                        <h3> <a href="/productlist">BPL Smart Oxy Pulse Oximeter</a> </h3>
                         <p>From Rs.3500</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <div class="single_product_item">
                         <img src="img/tranding_item/tranding_item_6.png" alt="#" class="img-fluid">
-                        <h3> <a href="/productlist1">N95 Anti Pollution Face Mask 8210 - 5 Pack</a> </h3>
+                        <h3> <a href="/productlist">N95 Anti Pollution Face Mask 8210 - 5 Pack</a> </h3>
                         <p>From Rs.100</p>
                     </div>
                 </div>
@@ -177,7 +177,7 @@
                             <div class="client_img">
                                 <img src="img/client_2.png" alt="#">
                             </div>
-                            <p>"Online medical store is a trusted online medical equipment dealer and is amongst the best medical devices suppliers.</p>
+                            <p>"online medical storeis a trusted online medical equipment dealer and is amongst the best medical devices suppliers.</p>
                             <h5>- Edinson James</h5>
                         </div>
                     </div>
