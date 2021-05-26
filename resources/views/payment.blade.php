@@ -36,7 +36,7 @@
                             CARD NAME</label>
                         <div class="input-group">
                             <input type="text" class="form-control" id="cardName" placeholder="Valid Card name"
-                                required autofocus />
+                            required="required" autofocus />
                            
                         </div>
                     </div>
@@ -45,7 +45,7 @@
                             CARD NUMBER</label>
                         <div class="input-group">
                             <input type="text" class="form-control" id="cardNumber" placeholder="Valid Card Number"
-                                required autofocus />
+                            required="required" autofocus />
                             <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
                         </div>
                     </div>
@@ -55,17 +55,17 @@
                                 <label for="expityMonth">
                                     EXPIRY DATE</label>
                                 <div class="col-xs-6 col-lg-6 pl-ziro">
-                                    <input type="text" class="form-control" id="expityMonth" placeholder="MM" required />
+                                    <input type="text" class="form-control" id="expityMonth" placeholder="MM" required="required" />
                                 </div>
                                 <div class="col-xs-6 col-lg-6 pl-ziro">
-                                    <input type="text" class="form-control" id="expityYear" placeholder="YY" required /></div>
+                                    <input type="text" class="form-control" id="expityYear" placeholder="YY" required="required" /></div>
                             </div>
                         </div>
                         <div class="col-xs-5 col-md-5 pull-right">
                             <div class="form-group">
                                 <label for="cvCode">
-                                    CV CODE</label>
-                                <input type="password" class="form-control" id="cvCode" placeholder="CV" required />
+                                    CVV CODE</label>
+                                <input type="password" class="form-control" id="cvCode" placeholder="CVV" required="required" />
                             </div>
                         </div>
                     </div>

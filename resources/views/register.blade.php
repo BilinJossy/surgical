@@ -39,7 +39,7 @@
                             <div class="login_part_text_iner">
                                 <h2>Welcome Back !</h2>
                                 <p>Please Sign in now Welcome Back You are valuable for us</p>
-                                <a href="/Login" class="btn_3">Sign in</a>
+                                <a href="/login" class="btn_3">Sign in</a>
                             </div>
                         </div>
                     </div>
