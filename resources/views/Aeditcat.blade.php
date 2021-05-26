@@ -23,7 +23,7 @@
      </tr>
      <tr>
          <td></td>
-         <td> <button class="btn btn-success"> SUBMIT </button></td>
+         <td> <button class="btn_3"> SUBMIT </button></td>
      </tr>
     </table>
     

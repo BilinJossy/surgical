@@ -22,7 +22,7 @@
                 <td>{{ $i->cname }}</td>
                 <td>{{ $i->cades }}</td>
   
-                <td><a class="btn btn-danger" href={{"/Aeditcat/".$i->id}}>EDIT</a></td>
+                <td><a class="btn_3" href={{"/Aeditcat/".$i->id}}>EDIT</a></td>
                 {{-- <td><a class="btn btn-danger"  href={{"/deletecat/".$i->id}}>DELETE</a></td> --}}
             
             </tr>

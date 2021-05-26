@@ -107,9 +107,9 @@
                 <td></td>
                 <td></td>
                 <td>
-                  <div class="cupon_text float-right">
+                  <!-- <div class="cupon_text float-right">
                     <a class="btn_1-disabled" href="#">Close Coupon</a>
-                  </div>
+                  </div> -->
                 </td>
               </tr>
               <tr>

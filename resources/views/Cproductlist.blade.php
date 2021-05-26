@@ -30,10 +30,10 @@
                             <div class="select_option">
                                 <div class="select_option_list">Category <i class="right fas fa-caret-down"></i> </div>
                                 <div class="select_option_dropdown">
-                                    <p><a href="#">Category 1</a></p>
-                                    <p><a href="#">Category 2</a></p>
-                                    <p><a href="#">Category 3</a></p>
-                                    <p><a href="#">Category 4</a></p>
+                                    <p><a href="#">Medical Instruments</a></p>
+                                    <p><a href="#">Opthalmic Supplies</a></p>
+                                    <p><a href="#">Wound & Dressing</a></p>
+                                    <!-- <p><a href="#">Category 4</a></p> -->
                                 </div>
                             </div>
                         </div>
@@ -41,10 +41,10 @@
                             <div class="select_option">
                                 <div class="select_option_list">Type <i class="right fas fa-caret-down"></i> </div>
                                 <div class="select_option_dropdown">
-                                    <p><a href="#">Type 1</a></p>
-                                    <p><a href="#">Type 2</a></p>
-                                    <p><a href="#">Type 3</a></p>
-                                    <p><a href="#">Type 4</a></p>
+                                <p><a href="#">3M Littmann</a></p>
+                                    <p><a href="#">Romsons</a></p>
+                                    <p><a href="#">Coloplast</a></p>
+                                    <!-- <p><a href="#">Type 4</a></p> -->
                                 </div>
                             </div>
                         </div>

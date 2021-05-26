@@ -54,8 +54,8 @@
 </td>
  </tr>
  <tr>
-     <td> <button href="/Myprofile" class="btn btn-danger"> CANCEL </button></td>
-     <td> <button class="btn btn-success"> SUBMIT </button></td>
+     <td> <button href="/Myprofile" class="btn_1"> CANCEL </button></td>
+     <td> <button class="btn_3"> SUBMIT </button></td>
  </tr>
 </table>
 

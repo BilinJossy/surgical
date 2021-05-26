@@ -9,7 +9,7 @@
         {{ csrf_field() }}
         <input style="width: 170px;margin-left:400px" class="form-control me-2" type="date" placeholder="Search" aria-label="Search" name="date1">
         <input style="width: 170px"class="form-control me-2" type="date" placeholder="Search" aria-label="Search" name="date2">
-       <br> <button class="btn btn-outline-success" type="submit">Submit</button>
+       <br> <button class="btn btn-outline-primary" type="submit">Submit</button>
       </form>
       
 

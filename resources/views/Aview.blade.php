@@ -35,8 +35,8 @@
                 <!-- <td>{{ $i->isprice }}</td>
                 <td>{{ $i->icprice }}</td> -->
                 <td><img width="150" height="100" src="{{ URL ::asset('assets/img/gallery/'.$i->image) }}"></td>
-                <td><a class="btn btn-warning" href={{"/Aedit/".$i->id}}>EDIT</a></td>
-                <td><a class="btn btn-danger"  href={{"/Adelete/".$i->id}}>DELETE</a></td>
+                <td><a class="btn_1" href={{"/Aedit/".$i->id}}>EDIT</a></td>
+                <td><a class="btn_3"  href={{"/Adelete/".$i->id}}>DELETE</a></td>
             
             </tr>
             

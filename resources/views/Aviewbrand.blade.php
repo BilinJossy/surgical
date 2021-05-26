@@ -22,7 +22,7 @@
                 <td>{{ $i->bname }}</td>
                 <td>{{ $i->bdes }}</td>
   
-                <td><a class="btn btn-warning" href={{"/Aeditbrand/".$i->id}}>EDIT</a></td>
+                <td><a class="btn_3" href={{"/Aeditbrand/".$i->id}}>EDIT</a></td>
                 {{-- <td><a class="btn btn-danger"  href={{"/deletecat/".$i->id}}>DELETE</a></td> --}}
             
             </tr>

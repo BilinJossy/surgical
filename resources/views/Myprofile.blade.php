@@ -47,7 +47,7 @@
   </tr>
   
 <tr>
-  <td><a class="btn btn-dark" href={{"/editprofile/".$var['id']}}>EDIT</a></td>
+  <td><a class="btn_3" href={{"/editprofile/".$var['id']}}>EDIT</a></td>
   
 </tr>
   </table>
