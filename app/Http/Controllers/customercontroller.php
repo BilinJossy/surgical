@@ -108,8 +108,8 @@ class customercontroller extends Controller
     }
     public function check1(Request $req)
     {
-        $cmail=req('email');
-        $cpass=req('password');
+        $cmail=request('email');
+        $cpass=request('password');
 
         $l=new login();
 
