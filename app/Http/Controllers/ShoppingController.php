@@ -116,9 +116,8 @@ class ShoppingController extends Controller
     static public function totalprice()
     {
         $userid= session::get('sname')['id'];
-        $customerId=$userid->id;
         $cart=DB::table('cart_models')
-        ->where('uid','=',$customerId)
+        ->where('uid','=',$userid)
         ->get();
         $total=0;
         foreach($cart as $cart)
