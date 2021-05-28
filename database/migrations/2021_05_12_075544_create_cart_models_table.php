@@ -15,7 +15,7 @@ class CreateCartModelsTable extends Migration
     {
         Schema::create('cart_models', function (Blueprint $table) {
             $table->id();
-            $table->String('pid');
+            $table->integer('pid');
             $table->integer('uid');
             $table->integer('qty');
             $table->integer('qtyprice');

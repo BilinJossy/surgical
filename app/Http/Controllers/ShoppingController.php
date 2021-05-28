@@ -98,10 +98,10 @@ class ShoppingController extends Controller
         // ->select('product_models.*','cart_models.id as cart_id')
         // ->get();
 
-        $total=$products=DB::table('cart_models')
-        ->join('product_models','cart_models.pid','=','product_models.id')
-        ->where('cart_models.uid',$userid)
-        ->sum('cart_models.qtyprice');
+        // $total=$products=DB::table('cart_models')
+        // ->join('product_models','cart_models.pid','=','product_models.id')
+        // ->where('cart_models.uid',$userid)
+        // ->sum('cart_models.qtyprice');
 
          $item = CartModel::with('cart')
         ->join('product_models','cart_models.pid','=','product_models.id')
@@ -110,7 +110,8 @@ class ShoppingController extends Controller
          ->get();
         // echo $total;
 
-        return view('cart',['item'=>$item,'total'=>$total]);
+        // return view('cart',['item'=>$item,'total'=>$total]);
+        return view('cart',['item'=>$item]);
     }
     static public function totalprice(Request $req)
     {
@@ -122,7 +123,7 @@ class ShoppingController extends Controller
         foreach($cart as $cart)
         {
             $products=DB::table('product_models')
-            ->where('id','=',$cart->id)
+            ->where('id','=',$cart->pid)
             ->get();
             foreach($products as $product)
             {
