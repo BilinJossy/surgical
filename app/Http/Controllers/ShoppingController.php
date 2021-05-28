@@ -113,9 +113,9 @@ class ShoppingController extends Controller
         // return view('cart',compact('item'));
         return view('cart');
     }
-    static public function totalprice(Request $req)
+    static public function totalprice( )
     {
-        $userid=$req->session()->get('sname') ['id'];
+        $userid=session()->get('sname') ['id'];
         $cart=DB::table('cart_models')
         ->where('uid','=',$userid)
         ->get();
