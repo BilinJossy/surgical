@@ -113,11 +113,12 @@ class ShoppingController extends Controller
         // return view('cart',['item'=>$item,'total'=>$total]);
         return view('cart',['item'=>$item]);
     }
-    static public function totalprice(Request $req)
+    static public function totalprice()
     {
-        $userid=$req->session()->get('sname') ['id'];
+        $userid= session::get('sname')['id'];
+        $customerId=$userid->id;
         $cart=DB::table('cart_models')
-        ->where('uid','=',$userid)
+        ->where('uid','=',$customerId)
         ->get();
         $total=0;
         foreach($cart as $cart)
@@ -135,6 +136,25 @@ class ShoppingController extends Controller
         
 
     }
+
+    // static public function totalprice(){
+    //     $custid= session::get('sname')['id'];
+    //     $customerId=$custid->id;
+    //     $carts=DB::table('carts')
+    //     ->where('userid','=', $customerId)->get();
+
+    //     $total=0;
+    //     foreach($carts as $cart)
+    //     {
+    //         $products=DB::table('items')
+    //         ->where('id','=',$cart->productid)->get();
+    //         foreach($products as $product)
+    //         {
+    //             $total=$total+($cart->qtyprice);
+    //         }
+    //     }
+    // return $total;
+    // }
 
     public function destroy($id)
     {
