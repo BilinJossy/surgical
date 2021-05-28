@@ -17,7 +17,7 @@ class CreateCartModelsTable extends Migration
             $table->id();
             $table->integer('pid');
             $table->integer('uid');
-            $table->string('qty');
+            $table->integer('qty');
             $table->integer('qtyprice');
             $table->timestamps();
         });
