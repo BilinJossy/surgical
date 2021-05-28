@@ -21,7 +21,7 @@ class CreateProductModelsTable extends Migration
             $table->foreign('bid')->references('id')->on('brand_models')->onUpdate('cascade')->OnDelete('cascade');
             $table->string('name');
             $table->string('des');
-            $table->integer('qty');
+            $table->string('qty');
             $table->string('cost');
             $table->string('sell');
             $table->string('image');
