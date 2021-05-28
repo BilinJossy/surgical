@@ -14,6 +14,7 @@ use App\Models\FeedbackModel;
 use Illuminate\support\Facades\DB;
 use session;
 use Carbon\Carbon;
+use DB;
 
 class ShoppingController extends Controller
 {
