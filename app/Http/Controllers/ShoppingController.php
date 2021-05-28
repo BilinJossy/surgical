@@ -11,6 +11,7 @@ use App\Models\customer;
 use App\Models\login;
 use App\Models\OrderModel;
 use App\Models\FeedbackModel;
+// use Illuminate\support\Facades\DB;
 use DB;
 use session;
 use Carbon\Carbon;
@@ -106,7 +107,7 @@ class ShoppingController extends Controller
         ->join('product_models','cart_models.pid','=','product_models.id')
         ->where('cart_models.uid',$userid)
          ->select('cart_models.*')
-         ->first();
+         ->get();
         // echo $total;
 
         return view('cart',['item'=>$item,'total'=>$total]);
