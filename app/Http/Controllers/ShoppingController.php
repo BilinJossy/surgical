@@ -11,7 +11,7 @@ use App\Models\customer;
 use App\Models\login;
 use App\Models\OrderModel;
 use App\Models\FeedbackModel;
-use Illuminate\support\Facades\DB;
+// use Illuminate\support\Facades\DB;
 use session;
 use Carbon\Carbon;
 use DB;
