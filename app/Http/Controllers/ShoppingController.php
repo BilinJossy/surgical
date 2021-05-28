@@ -91,11 +91,11 @@ class ShoppingController extends Controller
     {
         $userid=$req->session()->get('sname') ['id'];
         // session::get('sname')['id'];
-        $item2=DB::table('cart_models')
-        ->join('product_models','cart_models.pid','=','product_models.id')
-        ->where('cart_models.uid',$userid)
-        ->select('product_models.*','cart_models.id as cart_id')
-        ->get();
+        // $item2=DB::table('cart_models')
+        // ->join('product_models','cart_models.pid','=','product_models.id')
+        // ->where('cart_models.uid',$userid)
+        // ->select('product_models.*','cart_models.id as cart_id')
+        // ->get();
 
         $total=$products=DB::table('cart_models')
         ->join('product_models','cart_models.pid','=','product_models.id')
