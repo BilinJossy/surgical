@@ -106,7 +106,7 @@ class ShoppingController extends Controller
         ->join('product_models','cart_models.pid','=','product_models.id')
         ->where('cart_models.uid',$userid)
          ->select('cart_models.*')
-         ->get();
+         ->first();
         // echo $total;
 
         return view('cart',['item'=>$item,'total'=>$total]);
