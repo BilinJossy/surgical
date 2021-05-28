@@ -11,8 +11,7 @@ use App\Models\customer;
 use App\Models\login;
 use App\Models\OrderModel;
 use App\Models\FeedbackModel;
-// use Illuminate\support\Facades\DB;
-use DB;
+use Illuminate\support\Facades\DB;
 use session;
 use Carbon\Carbon;
 
@@ -92,30 +91,29 @@ class ShoppingController extends Controller
     {
         $userid=$req->session()->get('sname') ['id'];
         // session::get('sname')['id'];
-        // $item2=DB::table('cart_models')
-        // ->join('product_models','cart_models.pid','=','product_models.id')
-        // ->where('cart_models.uid',$userid)
-        // ->select('product_models.*','cart_models.id as cart_id')
-        // ->get();
+        $item2=DB::table('cart_models')
+        ->join('product_models','cart_models.pid','=','product_models.id')
+        ->where('cart_models.uid',$userid)
+        ->select('product_models.*','cart_models.id as cart_id')
+        ->get();
 
-        // $total=$products=DB::table('cart_models')
-        // ->join('product_models','cart_models.pid','=','product_models.id')
-        // ->where('cart_models.uid',$userid)
-        // ->sum('cart_models.qtyprice');
+        $total=$products=DB::table('cart_models')
+        ->join('product_models','cart_models.pid','=','product_models.id')
+        ->where('cart_models.uid',$userid)
+        ->sum('cart_models.qtyprice');
 
-        //  $item = CartModel::with('cart')
-        // ->join('product_models','cart_models.pid','=','product_models.id')
-        // ->where('cart_models.uid',$userid)
-        //  ->select('cart_models.*')
-        //  ->first();
-        // // echo $total;
+         $item = CartModel::with('cart')
+        ->join('product_models','cart_models.pid','=','product_models.id')
+        ->where('cart_models.uid',$userid)
+         ->select('cart_models.*')
+         ->get();
+        // echo $total;
 
-        // return view('cart',compact('item'));
-        return view('cart');
+        return view('cart',['item'=>$item,'total'=>$total]);
     }
-    static public function totalprice( )
+    static public function totalprice(Request $req)
     {
-        $userid=session()->get('sname') ['id'];
+        $userid=$req->session()->get('sname') ['id'];
         $cart=DB::table('cart_models')
         ->where('uid','=',$userid)
         ->get();
