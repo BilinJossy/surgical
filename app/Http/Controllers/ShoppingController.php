@@ -103,14 +103,15 @@ class ShoppingController extends Controller
         // ->where('cart_models.uid',$userid)
         // ->sum('cart_models.qtyprice');
 
-         $item = CartModel::with('cart')
-        ->join('product_models','cart_models.pid','=','product_models.id')
-        ->where('cart_models.uid',$userid)
-         ->select('cart_models.*')
-         ->first();
-        // echo $total;
+        //  $item = CartModel::with('cart')
+        // ->join('product_models','cart_models.pid','=','product_models.id')
+        // ->where('cart_models.uid',$userid)
+        //  ->select('cart_models.*')
+        //  ->first();
+        // // echo $total;
 
-        return view('cart',compact('item'));
+        // return view('cart',compact('item'));
+        return view('cart');
     }
     static public function totalprice(Request $req)
     {
