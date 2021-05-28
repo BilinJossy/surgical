@@ -12,7 +12,7 @@ use App\Models\login;
 use App\Models\OrderModel;
 use App\Models\FeedbackModel;
 // use Illuminate\support\Facades\DB;
-use session;
+use Session;
 use Carbon\Carbon;
 use DB;
 
