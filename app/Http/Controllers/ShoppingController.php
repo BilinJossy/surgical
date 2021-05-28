@@ -111,7 +111,28 @@ class ShoppingController extends Controller
 
         return view('cart',['item'=>$item,'total'=>$total]);
     }
+    static public function totalprice(Request $req)
+    {
+        $userid=$req->session()->get('sname') ['id'];
+        $cart=DB::table('cart_models')
+        ->where('uid','=',$userid)
+        ->get();
+        $total=0;
+        foreach($cart as $cart)
+        {
+            $products=DB::table('product_models')
+            ->where('id','=',$cart->id)
+            ->get();
+            foreach($products as $product)
+            {
+                $total=$total+($cart->qty)*($product->sell);
+            }
+        }
 
+        return $total;
+        
+
+    }
 
     public function destroy($id)
     {

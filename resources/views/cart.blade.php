@@ -1,8 +1,11 @@
 @extends('theme')
 
 @section('content')
-
-<h1>{{session('sname')->name}}</h1>
+<?php
+use App\Http\Controllers\ShoppingController;
+$tp=ShoppingController::totalprice();
+?>
+<!-- <h1>{{session('sname')->name}}</h1> -->
     <!-- breadcrumb part start-->
     <section class="breadcrumb_part">
         <div class="container">
@@ -119,7 +122,7 @@
                   <h5>Subtotal</h5>
                 </td>
                 <td>
-                  <h5>Rs.{{ $total }}</h5>
+                  <h5>Rs.{{ $tp }}</h5>
                 </td>
               </tr>
               <tr class="shipping_area">
