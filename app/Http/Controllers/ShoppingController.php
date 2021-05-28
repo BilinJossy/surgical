@@ -110,7 +110,7 @@ class ShoppingController extends Controller
          ->get();
         // echo $total;
 
-        return view('cart',['item'=>$item]);
+        return view('cart',compact('item'));
     }
     static public function totalprice(Request $req)
     {
