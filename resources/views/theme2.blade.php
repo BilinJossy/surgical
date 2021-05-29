@@ -190,10 +190,10 @@
                                 <a href="index.html"><img src="../img/logo.png" alt="#"></a>
                             </div>
                             <div class="footer_menu_item">
-                                <a href="index.html">Home</a>
-                                <a href="about.html">Category</a>
-                                <a href="product_list.html">Brand</a>
-                                <a href="#">Products</a>
+                                <a href="/Ahome">Home</a>
+                                <a href="/Acategory">Category</a>
+                                <a href="/Abrand">Brand</a>
+                                <a href="/Aproduct">Products</a>
                                <!-- <a href="blog.html">Blog</a>
                                 <a href="contact.html">Contact</a>-->
                             </div>

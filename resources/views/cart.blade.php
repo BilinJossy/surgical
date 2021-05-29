@@ -73,7 +73,7 @@ $tp=ShoppingController::totalprice();
                 </td>
 
                 <td>
-                      <a href="/removecart/{{ $i->id }}" class="btn tn-primary">Delete</a>
+                      <a href="/removecart/{{ $i->id }}" class="btn btn-primary">Delete</a>
                 </td>
 
               </tr>
